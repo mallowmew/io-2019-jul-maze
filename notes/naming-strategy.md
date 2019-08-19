@@ -21,7 +21,7 @@ Start Zone (for event triggering) =	#start
 Finish Zone (for event triggering)	= #finish
 
 End Screen container		=  .end
-Pop-up container			=  #bone
+Pop-up container			=  #pop-up
 Reset Button				=  #reset-button
 Win Text					= #win-text
 Lose Text					= #lost-text
