@@ -12,7 +12,5 @@ Route = Simple/Linear/Rectangular
 Cursors = Hands
 
 Splash
-Dog
-Colors as main
-Same Dog used in Splash screen as in Game Screen
-identical backdrop
+Same Dog graphic, backdrop and color palette used in Splash screen as in Game Screen
+
