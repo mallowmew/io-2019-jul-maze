@@ -7,26 +7,93 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Colors and Fonts</title>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Cousine:400,700&display=swap');
         body {
-            font-family: 'Bree Serif', serif;
+            font-family: 'Cousine', monospace;
         }
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         section {
             width: 100vw;
             height: 100vh;
+            background: #6a64d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .pop-up {
+            width: 500px;
+            height: 400px;
+            background: #ff64a7;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        h1 {
+            color: #f9f871;
+        }
+        p{
+            margin: 0.5rem 0;
+        }
+        button {
+            width: 150px;
+            height: 40px;
+            font-size: 1rem;
+            background: #c660d2;
+            border: none;
+        }
+        .pop-up div {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+        }
+        .pop-up div div {
+            width: 80px;
+            height: 80px;
+        }
+        .pop-up div div:first-child {
             background: #206be4;
+        }
+        .pop-up div div:nth-child(2) {
+            background: #c660d2;
+        }
+        .pop-up div div:nth-child(3) {
+            background: #ff8d79;
+        }
+        .pop-up div div:nth-child(4) {
+            background: #ffc35d;
+        }
+        .pop-up div div:nth-child(5) {
+            background: #f9f871;
+        }
+        .pop-up div div:nth-child(6) {
+            border: 1px solid #fff;
         }
     </style>
 </head>
 <body>
     <section>
-        <div>
-            <h1>Who's a good puppy</h1>
-            <button>Button</button>
+        <code>This is just color palette. You can use any color combination to build the page.</code>
+        <p>font-family: 'Cousine', monospace;</p>
+        <p>background: #6a64d9</p>
+        <div class="pop-up">
+            <h1>Heading color #f9f871</h1>
+            <p>Text color #000</p>
+            <button>Button color</button>
+            <div>
+                <div>#206be4</div>
+                <div>#c660d2</div>
+                <div>#ff8d79</div>
+                <div>#ffc35d</div>
+                <div>#f9f871</div>
+                <div>#ff64a7</div>
+            </div>
         </div>
     </section>
 </body>
