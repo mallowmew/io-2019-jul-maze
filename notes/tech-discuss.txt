@@ -1,6 +1,8 @@
 JS library- Velocity.js
 JQuery can still be implemented later if decided is needed.
 
-Maze will have 3 obstacles.
+Maze will have 4 obstacles.
+	3 oscillating brushes.
+	1 rotating tail.
 Straight lines on maze.
 Maze and Frame are one page.
