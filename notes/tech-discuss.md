@@ -1,5 +1,5 @@
 # JS libraries
-+ JQuery - used for load() and remove()
++ [JQuery](https://api.jquery.com/) - used for load() and remove()
 + [Velocity.js](http://velocityjs.org/)
 
 # Maze Constraints
