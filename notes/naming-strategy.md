@@ -1,12 +1,15 @@
 # Naming 
 
 Main Game Container =       .container
+
 Splash page container =     .splash
+play button =               #play-button
 
 Game page container =       .game
 Maze Path common styling = 	.path
 Maze Path positioning	=	#path1, #path2, #path3 etc.
 Obstacle container (for event triggering)	=	.obstacle
+Different obstacles =       #obstacle1, #obstacle2 etc.
 Brush styling 	=			.brush
 Tail styling =				#tail
 Dog head Container =		#head-cont
