@@ -25,10 +25,10 @@ Pop-up container			=  #pop-up
 Reset Button				=  #reset-button
 Win Text					= #win-text
 Lose Text					= #lost-text
-# Style
+
+# Code Style
 
 Indent by 4 spaces - not tabs
-
 
 ## Git Strategy
 
