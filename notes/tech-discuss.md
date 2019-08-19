@@ -1,6 +1,6 @@
 # JS libraries
 + JQuery - used for load() and remove()
-+ Velocity.js
++ [Velocity.js](http://velocityjs.org/)
 
 # Maze Constraints
 Maze will have 4 obstacles.
