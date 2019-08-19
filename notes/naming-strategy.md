@@ -6,11 +6,12 @@ Splash page container =     .splash
 play button =               #play-button
 
 Game page container =       .game
+Area that is not on the dog = .lose
 Maze Path common styling = 	.path
 Maze Path positioning	=	#path1, #path2, #path3 etc.
-Obstacle container (for event triggering)	=	.obstacle
+Obstacle container (for event triggering)	= .lose
 Different obstacles =       #obstacle1, #obstacle2 etc.
-Brush styling 	=			.brush
+Brush (obstacle) styling 	= .brush
 Tail styling =				#tail
 Dog head Container =		#head-cont
 Dog head image	=			#head-img
