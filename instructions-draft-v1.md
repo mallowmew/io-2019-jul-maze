@@ -12,10 +12,7 @@ Make puppy happy, stroke his whole body, avoiding the brushes along the way.\
 \
 1. To start click the button - Play!\
 2. Place cursor anywhere on the puppy\'92s head to start the game.\
-3. Move the hand icon along the puppy\'92s body to the tail - Hurray! Puppy is happy :-)\
+3. Use the mouse to move the hand icon along the puppy\'92s body to the tail - Hurray! Puppy is happy :-)\
 4. Moving off puppy\'92s sides or bumping into the brushes - Oh no! Puppy is sad\'85\
-\
-Restart the game \
-1. Click the button - Play again!\
 \
 }
