@@ -14,5 +14,5 @@ Cursors = Hands
 Splash
 Dog
 Colors as main
-Same Dog - head
+Same Dog used in Splash screen as in Game Screen
 identical backdrop
