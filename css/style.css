@@ -96,6 +96,11 @@ p {
     width: 100px;
 }
 
+.path {
+  background-colour: #376CE4;
+  border: 1px solid #4291FB;
+}
+
 #left-paw {
     top: 150px;
     left: 50px;
