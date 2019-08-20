@@ -6,8 +6,8 @@ var winEvent = new CustomEvent(
     }
 )
 
-$('.endzone').on('mouseover', function () {
-    $('.end-zone').trigger('winEvent')
+document.querySelector('#hind-container').addEventListener('mouseover', function () {
+    document.dispatchEvent(winEvent)
     console.log('dsfsesef')
 })
 
