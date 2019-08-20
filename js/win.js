@@ -1,7 +1,7 @@
 var gameWin = new CustomEvent(
     'gameWin',
     {
-        bubbles: true,
+        bubbles: false,
         cancelable: true,
     }
 )
