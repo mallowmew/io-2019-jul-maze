@@ -1,5 +1,5 @@
-var winEvent = new CustomEvent(
-    'winEvent',
+var gameWin = new CustomEvent(
+    'gameWin',
     {
         bubbles: true,
         cancelable: true,
@@ -7,7 +7,7 @@ var winEvent = new CustomEvent(
 )
 
 document.querySelector('#hind-container').addEventListener('mouseover', function () {
-    document.dispatchEvent(winEvent)
+    document.dispatchEvent(gameWin)
     console.log('dsfsesef')
 })
 
