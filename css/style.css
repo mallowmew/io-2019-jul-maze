@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: 'Cousine', monospace;
+  color: #f9f871;
+  background-color: #f9f871;
 }
 
 .container {
@@ -15,15 +23,25 @@ html {
     overflow: hidden;
 }
 
+.splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ff64a7;
+}
+
 .text-box{
   position: absolute;
   top: 30px;
-  left: 30px; 
+  left: 30px;
+  width: 55%;
 }
 
 .dog-img-container {
   position: absolute;
-  right: -60px;
+  right: -70px;
   bottom: 0;
   height: 600px;
 }
@@ -36,4 +54,11 @@ html {
 
 h1 {
   font-size: 4rem;
+  white-space: nowrap;
+  
 }
+
+p {
+  font-size: 2rem;
+}
+
