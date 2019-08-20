@@ -71,6 +71,7 @@ p {
     border: #ffc35d solid 10px;
     background-color: #f9f871;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 #play-button span {
