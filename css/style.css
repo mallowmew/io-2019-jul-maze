@@ -16,13 +16,17 @@ html {
 .game {
     height: 100%;
     width: 100%;
-    border: solid red 1px;
     position: relative;
+    background-color: #ffc35d;
 }
 
 .paw {
    position: absolute;
     width: 100px;
+    color: #6a64d9;
+}
+.paw g {
+    fill: #6a64d9;
 }
 #left-paw {
     top: 150px;
