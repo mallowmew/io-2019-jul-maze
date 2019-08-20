@@ -32,7 +32,7 @@ body {
     background-color: #ff64a7;
 }
 
-.text-box{
+.text-box {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -80,10 +80,10 @@ p {
 }
 
 .game {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background-color: #ffc35d;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #ffc35d;
 }
 
 .maze-background {
@@ -92,25 +92,25 @@ p {
 }
 
 .paw {
-  position: absolute;
-  width: 100px;
+    position: absolute;
+    width: 100px;
 }
 
 #left-paw {
-  top: 150px;
-  left: 50px;
-  transform: rotate(-30deg);
+    top: 150px;
+    left: 50px;
+    transform: rotate(-30deg);
 }
 
 #middle-paw {
-  bottom: 40px;
-  left: 100px;
-  width: 80px;
-  transform: rotate(20deg);
+    bottom: 40px;
+    left: 100px;
+    width: 80px;
+    transform: rotate(20deg);
 }
 
 #right-paw {
-  bottom: 90px;
-  left: 250px;
-  transform: rotate(30deg);
+    bottom: 90px;
+    left: 250px;
+    transform: rotate(30deg);
 }
