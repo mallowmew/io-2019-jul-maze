@@ -1,1 +1,0 @@
-$('.container').load('./splash.html')
