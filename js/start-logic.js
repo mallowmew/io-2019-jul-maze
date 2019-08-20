@@ -6,6 +6,6 @@ var gameStart = new CustomEvent(
     }
 )
 
-document.querySelector('#head-img').addEventListener('mouseover', function () {
+document.querySelector('.start-zone').addEventListener('mouseover', function () {
     document.dispatchEvent(gameStart)
 })
