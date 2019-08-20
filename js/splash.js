@@ -3,4 +3,3 @@ $(document).ready(function () {
         $('.container').load('./partials/game.html')
     })
 })
-
