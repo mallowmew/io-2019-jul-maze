@@ -22,19 +22,24 @@ html {
 
 .paw {
    position: absolute;
+    width: 100px;
 }
 #left-paw {
-    top: 40px;
-    left: 0;
+    top: 150px;
+    left: 50px;
+    transform: rotate(-30deg);
 }
 
 #middle-paw{
-    top: 60px;
-    left:200px;
+    bottom: 40px;
+    left: 100px;
+    width: 80px;
+    transform: rotate(20deg);
 }
 
 #right-paw{
-    top:70px;
-    right: 100px;
+    bottom: 90px;
+    left: 250px;
+    transform: rotate(30deg);
 }
 
