@@ -65,6 +65,7 @@ p {
 #play-button {
     position: relative;
     top: 36px;
+    left: 100px;
     width: 200px;
     height: 110px;
     border-radius: 5px;
@@ -72,17 +73,10 @@ p {
     background-color: #f9f871;
     margin: 0 auto;
     cursor: pointer;
-}
-
-#play-button span {
     color: #ff64a7;
     font-size: 5rem;
     font-weight: bold;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .game {
