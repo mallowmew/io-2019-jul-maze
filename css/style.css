@@ -104,7 +104,6 @@ p {
 
 .path {
   background-color: #376CE4;
-  border: 1px solid #4291FB;
 }
 
 #left-paw {
@@ -142,10 +141,10 @@ p {
 #start-zone-1 {
   background-color: #6a64d9;
   position: absolute;
-  top: 30px;
-  left: 50px;
-  width: 35px;
-  height: 90px;
+  top: 20px;
+  left: 30px;
+  width: 70px;
+  height: 105px;
 }
 
 #start-zone-2 {
@@ -153,16 +152,25 @@ p {
   position: absolute;
   top: 70px;
   left: 65px;
-  width: 70px;
+  width: 65px;
+  height: 45px;
+}
+
+#start-zone-3 {
+  background-color: #6a64d9;
+  position: absolute;
+  top: 120px;
+  left: 48px;
+  width: 45px;
   height: 45px;
 }
 
 #hind-container {
   position: absolute;
-  top: 350px;
-  left: 650px;
+  top: 345px;
+  left: 630px;
   height: 150px;
-  width: 100px;
+  width: 150px;
 }
 
 #hind-img {
@@ -173,9 +181,10 @@ p {
 .end-zone {
   background-color: #6a64d9;
   position: absolute;
-  top: 72px;
-  width: 55px;
-  height: 35px;
+  top: 70px;
+  left: 20px;
+  width: 65px;
+  height: 45px;
 }
 
 #first-section {
