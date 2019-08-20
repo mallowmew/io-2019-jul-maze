@@ -1,9 +1,10 @@
-var brushes = document.querySelectorAll('.brush')
+var lose = new CustomEvent(
+    'lose', {
+        bubbles: false,
+        cancelable: true,
+    }
+)
 
-var tail = document.getElementById('tail')
-
-var lose = document.getElementsByClassName('lose')
-
-lose.addEventListener('mouseenter', function(event) {
-
+document.querySelector('.lose').addEventListener('mouseenter', function(){
+    document.querySelector('.test').innerHTML = "pleasework"
 })
