@@ -90,14 +90,14 @@ p {
   background-color: #ffc35d;
 }
 
+.maze-background {
+    height: 100%;
+    width: 100%;
+}
+
 .paw {
   position: absolute;
   width: 100px;
-}
-
-.maze-background{
-    height: 100%;
-    width: 100%;
 }
 
 #left-paw {
