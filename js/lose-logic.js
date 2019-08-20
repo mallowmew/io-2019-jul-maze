@@ -2,11 +2,8 @@ var brushes = document.querySelectorAll('.brush')
 
 var tail = document.getElementById('tail')
 
-var mazeBackground = document.getElementById('maze-background')
+var lose = document.getElementsByClassName('lose')
 
+lose.addEventListener('mouseenter', function(event) {
 
-function loseLogic() {
-    mazeBackground.innerHTML = '<div class="dummy-popup">ksjdhfkjsadfh</div>'
-}
-
-
+})
