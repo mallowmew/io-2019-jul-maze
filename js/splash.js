@@ -1,4 +1,7 @@
-document.getElementById('play-button').addEventListener("click", function () {
-    $('.splash').remove()
-    $('.container').load('game.html')
+$(document).ready(function () {
+    $('#play-button').on('click', function () {
+        $('.splash').remove()
+        $('.container').load('./partials/game.html')
+    })
 })
+
