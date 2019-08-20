@@ -95,6 +95,10 @@ p {
   width: 100px;
 }
 
+.maze-background{
+    height: 100%;
+    width: 100%;
+}
 #left-paw {
   top: 150px;
   left: 50px;
