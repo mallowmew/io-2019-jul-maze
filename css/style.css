@@ -230,14 +230,14 @@ p {
   position: absolute;
   top: 490px;
   left: 410px;
-  width: 70px;
+  width: 100px;
   height: 30px;
 }
 
 #eighth-section {
   position: absolute;
   top: 330px;
-  left: 480px;
+  left: 510px;
   width: 30px;
   height: 190px;
 }
@@ -245,7 +245,7 @@ p {
 #ninth-section {
   position: absolute;
   top: 330px;
-  left: 380px;
+  left: 410px;
   width: 100px;
   height: 30px;
 }
@@ -253,7 +253,7 @@ p {
 #tenth-section {
   position: absolute;
   top: 100px;
-  left: 380px;
+  left: 410px;
   width: 30px;
   height: 230px;
 }
@@ -261,8 +261,8 @@ p {
 #eleventh-section {
   position: absolute;
   top: 100px;
-  left: 410px;
-  width: 210px;
+  left: 440px;
+  width: 180px;
   height: 30px;
 }
 
