@@ -23,32 +23,6 @@ body {
     overflow: hidden;
 }
 
-.game {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background-color: #ffc35d;
-}
-
-#left-paw {
-    top: 150px;
-    left: 50px;
-    transform: rotate(-30deg);
-}
-
-#middle-paw {
-    bottom: 40px;
-    left: 100px;
-    width: 80px;
-    transform: rotate(20deg);
-}
-
-#right-paw {
-    bottom: 90px;
-    left: 250px;
-    transform: rotate(30deg);
-}
-
 .splash {
     position: absolute;
     top: 0;
@@ -107,4 +81,30 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.game {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #ffc35d;
+}
+
+#left-paw {
+  top: 150px;
+  left: 50px;
+  transform: rotate(-30deg);
+}
+
+#middle-paw {
+  bottom: 40px;
+  left: 100px;
+  width: 80px;
+  transform: rotate(20deg);
+}
+
+#right-paw {
+  bottom: 90px;
+  left: 250px;
+  transform: rotate(30deg);
 }
