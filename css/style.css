@@ -46,14 +46,14 @@ body {
     transform: rotate(-30deg);
 }
 
-#middle-paw{
+#middle-paw {
     bottom: 40px;
     left: 100px;
     width: 80px;
     transform: rotate(20deg);
 }
 
-#right-paw{
+#right-paw {
     bottom: 90px;
     left: 250px;
     transform: rotate(30deg);
