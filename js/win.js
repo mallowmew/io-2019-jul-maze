@@ -3,11 +3,12 @@ var winEvent = new CustomEvent(
     {
         bubbles: true,
         cancelable: true,
-
     }
 )
 
 $('#hind-container').on('mouseover', function () {
-    $.dispatchEvent(winEvent)
+    $('#hind-container').trigger('winEvent')
+    console.log('dsfsesef')
 })
+
 
