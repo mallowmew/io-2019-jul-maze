@@ -8,5 +8,4 @@ var lose = new CustomEvent(
 document.querySelector('.lose').addEventListener('mouseenter', function(){
     document.dispatchEvent(lose)
     console.log('hey')
-
 })
