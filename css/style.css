@@ -90,6 +90,11 @@ p {
   background-color: #ffc35d;
 }
 
+.paw {
+  position: absolute;
+  width: 100px;
+}
+
 #left-paw {
   top: 150px;
   left: 50px;
