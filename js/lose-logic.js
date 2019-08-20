@@ -6,5 +6,7 @@ var lose = new CustomEvent(
 )
 
 document.querySelector('.lose').addEventListener('mouseenter', function(){
-    document.querySelector('.test').innerHTML = "pleasework"
+    document.dispatchEvent(lose)
+    console.log('hey')
+
 })
