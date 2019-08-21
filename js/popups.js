@@ -1,5 +1,3 @@
-
-
 $(document).on('gameWin', function() {
     $('.show-popup').show()
     $('.show-popup').load('./partials/popups.html', {}, function (responseText, textStatus, jqXHR) {
