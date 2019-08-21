@@ -1,4 +1,3 @@
-
 var showWinPopup = new CustomEvent(
     'showPopup', {
         bubbles: false,
@@ -30,5 +29,3 @@ document.querySelector('.lose').addEventListener('mouseover', function () {
         document.querySelector('#pop-up-msg').textContent = "You lose!"
     })
 })
-
-
