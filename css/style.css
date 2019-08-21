@@ -91,9 +91,20 @@ p {
     width: 100%;
 }
 
+.maze-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .paw {
     position: absolute;
     width: 100px;
+}
+
+.path {
+  background-color: #376CE4;
+  border: 1px solid #4291FB;
 }
 
 #left-paw {
