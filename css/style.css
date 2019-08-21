@@ -244,9 +244,17 @@ body {
     bottom: 175px;
     height: 10px;
     width: 10px;
-    border: solid 1px red;
+    -webkit-animation: rotation 1s infinite linear;
+    z-index: 1;
 }
-
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
 .tail-hitbox img {
     height: 100%;
     width: 100%;
@@ -258,7 +266,6 @@ body {
     bottom: 50%;
     height: 100px;
     width: 20px;
-    border: solid 1px green;
 }
 .end-zone {
     position: absolute;
