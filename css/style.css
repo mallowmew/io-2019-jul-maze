@@ -238,6 +238,28 @@ body {
     z-index: 2;
 }
 
+#tail {
+    position: absolute;
+    right: 90px;
+    bottom: 175px;
+    height: 10px;
+    width: 10px;
+    border: solid 1px red;
+}
+
+.tail-hitbox img {
+    height: 100%;
+    width: 100%;
+}
+
+.tail-hitbox{
+    position: absolute;
+    left: -50%;
+    bottom: 50%;
+    height: 100px;
+    width: 20px;
+    border: solid 1px green;
+}
 .end-zone {
     position: absolute;
     top: 70px;
