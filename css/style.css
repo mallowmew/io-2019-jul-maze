@@ -350,12 +350,11 @@ body {
   height: 360px;
 }
 
-#bone-img {
-    width: 80%;
-    height: 380px;
-    margin: 110px 10%;
+.show-popup {
     position: absolute;
     top: 0;
+    display: none;
+    z-index: 10;
 }
 
 .pop-up-background {
@@ -372,6 +371,14 @@ body {
     width: 100%;
 }
 
+#bone-img {
+    width: 80%;
+    height: 380px;
+    margin: 110px 10%;
+    position: absolute;
+    top: 0;
+}
+
 #pop-up-msg {
     position: absolute;
     top: 50%;
@@ -380,11 +387,4 @@ body {
     margin: -24px;
     font-size: 4rem;
     margin-left: -90px;
-}
-
-.show-popup {
-    position: absolute;
-    top: 0;
-    display: none;
-    z-index: 10;
 }
