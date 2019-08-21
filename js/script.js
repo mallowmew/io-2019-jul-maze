@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $('.container').load('./partials/splash.html')
+    $('.container').load('partials/splash.html')
 })
