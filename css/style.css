@@ -307,23 +307,26 @@ p {
   height: 360px;
 }
 
-#pop-up img {
+#bone-img {
     width: 80%;
     height: 380px;
     margin: 110px 10%;
+    position: absolute;
+    top: 0;
 }
 
 .pop-up-background {
     height: 600px;
     width: 800px;
-    background-color: #6a64d9;
+    background-color: #ff64a7;
     position: relative;
     overflow: hidden;
+    opacity: 0.7;
 }
 
 .pop-up-container {
-    position: relative;
     height: 100%;
+    width: 100%;
 }
 
 #pop-up-msg {
@@ -336,3 +339,8 @@ p {
     margin-left: -90px;
 }
 
+.show-popup {
+    position: absolute;
+    top: 0;
+    display: none;
+}
