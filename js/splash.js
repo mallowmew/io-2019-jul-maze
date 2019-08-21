@@ -1,5 +1,5 @@
 $(document).ready(function () {
     $('#play-button').on('click', function () {
-        $('.container').load('./partials/game.html')
+        $('.container').load('partials/game.html')
     })
 })
