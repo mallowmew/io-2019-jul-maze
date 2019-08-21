@@ -51,8 +51,9 @@ $(function(){
 
     function secondBrushLoop(){
         $('#second-brush')
-            .animate({bottom: 250}, 1000)
-            .animate({bottom: 150}, 1000, SecondBrushlLoop)
+            .animate({left: 380}, 1000)
+            .animate({left: 490}, 1000, secondBrushLoop)
     }
-    SecondBrushLoop()
+    secondBrushLoop()
 })
+
