@@ -31,7 +31,6 @@ document.querySelectorAll('.start-zone').forEach(function(starts) {
 
 document.addEventListener('gameStart', function() {
     document.querySelectorAll('.lose').forEach(function(hitboxes) {
-        //console.log('Adding event to ' + hitboxes)
         hitboxes.addEventListener('mouseenter', function() {
             document.dispatchEvent(gameLose)
             console.log('You lose!')
