@@ -6,15 +6,15 @@ var gameStart = new CustomEvent(
     }
 )
 
-document.querySelectorAll('.start-zone').forEach(function(starts) {
+$('.start-zone').each(function(index, starts) {
     starts.addEventListener('mouseover', function () {
-        document.dispatchEvent(gameStart)
+        $(document).trigger('gameStart')
         console.log('Start!')
     })
 })
 
-document.addEventListener('gameStart', function() {
-    document.querySelectorAll('.lose').forEach(function(hitboxes) {
+$(document).on('gameStart', function() {
+    $('.lose').each( function( index, hitboxes) {
         hitboxes.addEventListener('mouseenter', function() {
             console.log('You lose!')
             $('.show-popup').show()
@@ -31,8 +31,8 @@ document.addEventListener('gameStart', function() {
     })
 }) 
 
-document.addEventListener('gameStart', function() {
-    document.querySelector('.end-zone').addEventListener('mouseover', function () {
+$(document).on('gameStart', function() {
+    $('.end-zone').on('mouseover', function () {
         console.log('You win!')
         $('.show-popup').show()
         $('.show-popup').load('./partials/popups.html', {}, function () {
