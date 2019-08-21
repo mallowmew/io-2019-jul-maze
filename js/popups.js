@@ -7,9 +7,8 @@ var showPopup = new CustomEvent(
     }
 )
 
-document.getElementById('hind-img').addEventListener('mouseover', function () {
+document.querySelector('.end-zone').addEventListener('mouseover', function () {
     document.dispatchEvent(showPopup)
-    //$('.popup-container').load('./partials/popups.html')
-    console.log('!')
+    $('.game').load('./partials/popups.html')
 })
 
