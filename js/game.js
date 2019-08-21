@@ -6,59 +6,52 @@ var gameStart = new CustomEvent(
     }
 )
 
-var gameLose = new CustomEvent(
-    'gameLose', {
-        bubbles: false,
-        cancelable: true,
-        detail: {}
-    }
-)
-
-var gameWin = new CustomEvent(
-    'gameWin', {
-        bubbles: false,
-        cancelable: true,
-        detail: {}
-    }
-)
-
-document.querySelectorAll('.start-zone').forEach(function(starts) {
+$('.start-zone').each(function(index, starts) {
     starts.addEventListener('mouseover', function () {
-        document.dispatchEvent(gameStart)
+        $(document).trigger('gameStart')
         console.log('Start!')
     })
 })
 
-document.addEventListener('gameStart', function() {
-    document.querySelectorAll('.lose').forEach(function(hitboxes) {
-        //console.log('Adding event to ' + hitboxes)
+$(document).on('gameStart', function() {
+    $('.lose').each( function(index, hitboxes) {
         hitboxes.addEventListener('mouseenter', function() {
-            document.dispatchEvent(gameLose)
             console.log('You lose!')
+            $('.show-popup').show()
+            $('.show-popup').load('./partials/popups.html', {}, function() {
+                $("#bone-img").attr({ 
+                    "src": "images/lose-bone.svg", 
+                    "alt": "Lose popup background"
+                });
+                $('.pop-up-background').css('background-color','#f9f871')
+                $('#pop-up-msg').text("You lose!")
+                $('#pop-up-msg').css('color', '#f9f871')
+            })
         })
     })
 }) 
 
-document.addEventListener('gameStart', function() {
-    document.querySelector('.end-zone').addEventListener('mouseover', function () {
-        document.dispatchEvent(gameWin)
+$(document).on('gameStart', function() {
+    $('.end-zone').on('mouseover', function () {
         console.log('You win!')
+        $('.show-popup').show()
+        $('.show-popup').load('./partials/popups.html', {}, function () {
+            $('#pop-up-msg').text("You win!")
+        })
     })
 })
 
-$(function(){
-
-    function firstBrushLoop(){
-     $('#first-brush')
-         .animate({bottom: 250}, 1000)
-         .animate({bottom: 150}, 1000, firstBrushLoop)
+$(function() {
+    function firstBrushLoop() {
+        $('#first-brush')
+            .animate({bottom: 250}, 1000)
+            .animate({bottom: 150}, 1000, firstBrushLoop)
     }
     firstBrushLoop()
 })
 
-$(function(){
-
-    function secondBrushLoop(){
+$(function() {
+    function secondBrushLoop() {
         $('#second-brush')
             .animate({left: 380}, 1000)
             .animate({left: 550}, 200, secondBrushLoop)
@@ -66,9 +59,8 @@ $(function(){
     secondBrushLoop()
 })
 
-$(function(){
-
-    function thirdBrushLoop(){
+$(function() {
+    function thirdBrushLoop() {
         $('#third-brush')
             .animate({right: 350}, 400)
             .animate({right: 290}, 400, thirdBrushLoop)

@@ -249,16 +249,17 @@ body {
     bottom: 175px;
     height: 10px;
     width: 10px;
-    -webkit-animation: rotation 1s infinite linear;
+    animation: rotation 1s infinite linear;
+    z-index: 1;
     z-index: 3;
 }
 
-@-webkit-keyframes rotation {
+@keyframes rotation {
     from {
-        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
     }
 }
 
@@ -380,11 +381,12 @@ body {
 }
 
 #twelfth-section {
-  position: absolute;
-  top: 100px;
-  left: 620px;
-  width: 30px;
-  height: 360px;
+    position: absolute;
+    top: 100px;
+    left: 620px;
+    width: 30px;
+    height: 360px;
+    border-radius: 0 20px 0 20px;
 }
 
 .show-popup {
@@ -420,7 +422,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: #000000;
+    color: #ff64a7;
     margin: -24px;
     font-size: 4rem;
     margin-left: -90px;
