@@ -343,10 +343,48 @@ body {
 }
 
 #twelfth-section {
+  position: absolute;
+  top: 100px;
+  left: 620px;
+  width: 30px;
+  height: 360px;
+}
+
+.show-popup {
     position: absolute;
-    top: 100px;
-    left: 620px;
-    width: 30px;
-    height: 360px;
-    border-radius: 0 20px 0 20px;
+    top: 0;
+    display: none;
+    z-index: 10;
+}
+
+.pop-up-background {
+    height: 600px;
+    width: 800px;
+    background-color: #ff64a7;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+.pop-up-container {
+    height: 100%;
+    width: 100%;
+}
+
+#bone-img {
+    width: 80%;
+    height: 380px;
+    margin: 110px 10%;
+    position: absolute;
+    top: 0;
+}
+
+#pop-up-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #000000;
+    margin: -24px;
+    font-size: 4rem;
+    margin-left: -90px;
 }

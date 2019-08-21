@@ -7,7 +7,7 @@ var gameStart = new CustomEvent(
 )
 
 var gameLose = new CustomEvent(
-    'lose', {
+    'gameLose', {
         bubbles: false,
         cancelable: true,
         detail: {}
@@ -31,6 +31,7 @@ document.querySelectorAll('.start-zone').forEach(function(starts) {
 
 document.addEventListener('gameStart', function() {
     document.querySelectorAll('.lose').forEach(function(hitboxes) {
+        //console.log('Adding event to ' + hitboxes)
         hitboxes.addEventListener('mouseenter', function() {
             document.dispatchEvent(gameLose)
             console.log('You lose!')
