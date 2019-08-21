@@ -93,8 +93,8 @@ p {
 
 .maze-container {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 
 .paw {
@@ -103,26 +103,54 @@ p {
 }
 
 .path {
-  background-color: #376CE4;
+  background-color: #206BE4;
+}
+
+#top-left-paw {
+    top: 30px;
+    left: 240px;
+    width: 70px;
+    transform: rotate(-20deg);
+}
+
+#top-right-paw {
+    top: 30px;
+    right: 240px;
+    width: 50px;
+    transform: rotate(60deg);
 }
 
 #left-paw {
-    top: 150px;
-    left: 50px;
+    top: 250px;
+    left: 40px;
     transform: rotate(-30deg);
 }
 
-#middle-paw {
+#bottom-left-paw {
     bottom: 40px;
     left: 100px;
     width: 80px;
     transform: rotate(20deg);
 }
 
-#right-paw {
-    bottom: 90px;
+#bottom-middle-paw {
+    bottom: 60px;
     left: 250px;
     transform: rotate(30deg);
+}
+
+#bottom-right-paw {
+    bottom: 35px;
+    right: 130px;
+    width: 80px;
+    transform: rotate(-40deg);
+}
+
+#right-paw {
+    bottom: 320px;
+    right: 30px;
+    width: 80px;
+    transform: rotate(10deg);
 }
 
 #head-container {
@@ -138,13 +166,6 @@ p {
   width: 100%;
 }
 
-#hind-container {
-    position: absolute;
-    top: 350px;
-    left: 650px;
-    height: 150px;
-    width: 100px;
-}
 #start-zone-1 {
   position: absolute;
   top: 20px;
