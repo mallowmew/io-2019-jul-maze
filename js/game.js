@@ -14,7 +14,7 @@ $('.start-zone').each(function(index, starts) {
 })
 
 $(document).on('gameStart', function() {
-    $('.lose').each( function( index, hitboxes) {
+    $('.lose').each( function(index, hitboxes) {
         hitboxes.addEventListener('mouseenter', function() {
             console.log('You lose!')
             $('.show-popup').show()
