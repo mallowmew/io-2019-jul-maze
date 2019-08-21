@@ -22,9 +22,11 @@ var gameWin = new CustomEvent(
     }
 )
 
-document.querySelector('.start-zone').addEventListener('mouseover', function () {
-    document.dispatchEvent(gameStart)
-    console.log('Start!')
+document.querySelectorAll('.start-zone').forEach(function(starts) {
+    starts.addEventListener('mouseover', function () {
+        document.dispatchEvent(gameStart)
+        console.log('Start!')
+    })
 })
 
 document.querySelectorAll('.lose').forEach(function(hitboxes) {
