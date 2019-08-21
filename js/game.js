@@ -46,7 +46,7 @@ document.addEventListener('gameStart', function() {
     })
 })
 
-$(function(){
+$(function() {
     function firstBrushLoop() {
         $('#first-brush')
             .animate({bottom: 250}, 1000)
@@ -55,7 +55,7 @@ $(function(){
     firstBrushLoop()
 })
 
-$(function(){
+$(function() {
     function secondBrushLoop() {
         $('#second-brush')
             .animate({left: 380}, 1000)
@@ -64,7 +64,7 @@ $(function(){
     secondBrushLoop()
 })
 
-$(function(){
+$(function() {
     function thirdBrushLoop() {
         $('#third-brush')
             .animate({right: 350}, 400)
