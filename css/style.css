@@ -247,6 +247,7 @@ body {
     -webkit-animation: rotation 1s infinite linear;
     z-index: 1;
 }
+
 @-webkit-keyframes rotation {
     from {
         -webkit-transform: rotate(0deg);
@@ -255,18 +256,20 @@ body {
         -webkit-transform: rotate(359deg);
     }
 }
+
 .tail-hitbox img {
     height: 100%;
     width: 100%;
 }
 
-.tail-hitbox{
+.tail-hitbox {
     position: absolute;
     left: -50%;
     bottom: 50%;
     height: 100px;
     width: 20px;
 }
+
 .end-zone {
     position: absolute;
     top: 70px;
