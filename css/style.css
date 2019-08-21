@@ -203,7 +203,6 @@ p {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .pop-up-background {
     margin: 50px auto;
     height: 600px;
@@ -211,7 +210,7 @@ p {
     background-color: #6a64d9;
     position: relative;
     overflow: hidden;
-=======
+
 .end-zone {
   position: absolute;
   top: 70px;
@@ -314,5 +313,4 @@ p {
   left: 620px;
   width: 30px;
   height: 360px;
->>>>>>> 9094fa304393057198a4e1167d5322817ca31afa
 }
