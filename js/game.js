@@ -29,16 +29,20 @@ document.querySelectorAll('.start-zone').forEach(function(starts) {
     })
 })
 
-document.querySelectorAll('.lose').forEach(function(hitboxes) {
-    hitboxes.addEventListener('mouseenter', function() {
-        document.dispatchEvent(gameLose)
-        console.log('You lose!')
+document.addEventListener('gameStart', function() {
+    document.querySelectorAll('.lose').forEach(function(hitboxes) {
+        hitboxes.addEventListener('mouseenter', function() {
+            document.dispatchEvent(gameLose)
+            console.log('You lose!')
+        })
     })
-})
+}) 
 
-document.querySelector('.end-zone').addEventListener('mouseover', function () {
-    document.dispatchEvent(gameWin)
-    console.log('You win!')
+document.addEventListener('gameStart', function() {
+    document.querySelector('.end-zone').addEventListener('mouseover', function () {
+        document.dispatchEvent(gameWin)
+        console.log('You win!')
+    })
 })
 
 $(function(){
