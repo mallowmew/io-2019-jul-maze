@@ -202,9 +202,13 @@ body {
 .brush {
     height: 100px;
     width: 50px;
-    background-color: red;
     position: absolute;
     z-index: 1;
+}
+
+.brush img {
+    height: 100%;
+    width: 100%;
 }
 
 #first-brush {
