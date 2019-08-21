@@ -187,12 +187,26 @@ p {
     width: 50px;
     background-color: red;
     position: absolute;
+    z-index: 1;
 }
 
 #first-brush {
-    bottom: 100px;
-    left: 500px;
+    bottom: 200px;
+    left: 250px;
+    transform: rotate(90deg);
 }
+
+#second-brush {
+    bottom: 125px;
+    left: 435px;
+
+}
+
+#third-brush {
+    top: 183px;
+    right: 290px;
+}
+
 
 .end-zone {
   position: absolute;
