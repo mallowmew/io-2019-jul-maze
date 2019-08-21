@@ -6,22 +6,6 @@ var gameStart = new CustomEvent(
     }
 )
 
-var gameLose = new CustomEvent(
-    'gameLose', {
-        bubbles: false,
-        cancelable: true,
-        detail: {}
-    }
-)
-
-var gameWin = new CustomEvent(
-    'gameWin', {
-        bubbles: false,
-        cancelable: true,
-        detail: {}
-    }
-)
-
 document.querySelectorAll('.start-zone').forEach(function(starts) {
     starts.addEventListener('mouseover', function () {
         document.dispatchEvent(gameStart)
@@ -32,16 +16,28 @@ document.querySelectorAll('.start-zone').forEach(function(starts) {
 document.addEventListener('gameStart', function() {
     document.querySelectorAll('.lose').forEach(function(hitboxes) {
         hitboxes.addEventListener('mouseenter', function() {
-            document.dispatchEvent(gameLose)
             console.log('You lose!')
+            $('.show-popup').show()
+            $('.show-popup').load('./partials/popups.html', {}, function() {
+                $("#bone-img").attr({ 
+                    "src": "images/lose-bone.svg", 
+                    "alt": "Lose popup background"
+                });
+                $('.pop-up-background').css('background-color','#f9f871')
+                $('#pop-up-msg').text("You lose!")
+                $('#pop-up-msg').css('color', '#f9f871')
+            })
         })
     })
 }) 
 
 document.addEventListener('gameStart', function() {
     document.querySelector('.end-zone').addEventListener('mouseover', function () {
-        document.dispatchEvent(gameWin)
         console.log('You win!')
+        $('.show-popup').show()
+        $('.show-popup').load('./partials/popups.html', {}, function () {
+            $('#pop-up-msg').text("You win!")
+        })
     })
 })
 
@@ -70,24 +66,4 @@ $(function() {
             .animate({right: 290}, 400, thirdBrushLoop)
     }
     thirdBrushLoop()
-})
-
-$(document).on('gameWin', function() {
-    $('.show-popup').show()
-    $('.show-popup').load('./partials/popups.html', {}, function () {
-        $('#pop-up-msg').text("You win!")
-    })
-})
-
-$(document).on('gameLose', function() {
-    $('.show-popup').show()
-    $('.show-popup').load('./partials/popups.html', {}, function() {
-        $("#bone-img").attr({ 
-            "src": "images/lose-bone.svg", 
-            "alt": "Lose popup background"
-        });
-        $('.pop-up-background').css('background-color','#f9f871')
-        $('#pop-up-msg').text("You lose!")
-        $('#pop-up-msg').css('color', '#f9f871')
-    })
 })
