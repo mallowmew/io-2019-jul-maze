@@ -27,9 +27,11 @@ document.querySelector('.start-zone').addEventListener('mouseover', function () 
     console.log('Start!')
 })
 
-document.querySelector('.lose').addEventListener('mouseenter', function(){
-    document.dispatchEvent(gameLose)
-    console.log('You lose!')
+document.querySelectorAll('.lose').forEach(function(hitboxes) {
+    hitboxes.addEventListener('mouseenter', function() {
+        document.dispatchEvent(gameLose)
+        console.log('You lose!')
+    })
 })
 
 document.querySelector('.end-zone').addEventListener('mouseover', function () {
