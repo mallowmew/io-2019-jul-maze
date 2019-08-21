@@ -36,3 +36,23 @@ document.querySelector('.end-zone').addEventListener('mouseover', function () {
     document.dispatchEvent(gameWin)
     console.log('You win!')
 })
+
+$(function(){
+
+    function firstBrushLoop(){
+     $('#first-brush')
+         .animate({bottom: 250}, 1000)
+         .animate({bottom: 150}, 1000, firstBrushLoop)
+    }
+    firstBrushLoop()
+})
+
+$(function(){
+
+    function secondBrushLoop(){
+        $('#second-brush')
+            .animate({bottom: 250}, 1000)
+            .animate({bottom: 150}, 1000, SecondBrushlLoop)
+    }
+    SecondBrushLoop()
+})
