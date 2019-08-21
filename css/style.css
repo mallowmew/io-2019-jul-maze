@@ -25,10 +25,8 @@ body {
 
 .splash {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
     background-color: #ff64a7;
 }
 
@@ -48,17 +46,16 @@ body {
 }
 
 .dog-img-container img {
-    display: block;
     width: 100%;
     height: 100%;
 }
 
-h1 {
+.splash h1 {
     font-size: 4rem;
     white-space: nowrap;
 }
 
-p {
+.splash p {
     font-size: 2rem;
 }
 
@@ -71,7 +68,6 @@ p {
     border-radius: 5px;
     border: #ffc35d solid 10px;
     background-color: #f9f871;
-    margin: 0 auto;
     cursor: pointer;
     color: #ff64a7;
     font-size: 5rem;
@@ -103,7 +99,7 @@ p {
 }
 
 .path {
-  background-color: #206BE4;
+    background-color: #206BE4;
 }
 
 #top-left-paw {
@@ -154,53 +150,53 @@ p {
 }
 
 #head-container {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  height: 150px;
-  width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 150px;
+    width: 150px;
 }
 
 #head-img {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 #start-zone-1 {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  width: 70px;
-  height: 105px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 70px;
+    height: 105px;
 }
 
 #start-zone-2 {
-  position: absolute;
-  top: 70px;
-  left: 65px;
-  width: 65px;
-  height: 45px;
+    position: absolute;
+    top: 70px;
+    left: 65px;
+    width: 65px;
+    height: 45px;
 }
 
 #start-zone-3 {
-  position: absolute;
-  top: 120px;
-  left: 48px;
-  width: 45px;
-  height: 45px;
+    position: absolute;
+    top: 120px;
+    left: 48px;
+    width: 45px;
+    height: 45px;
 }
 
 #hind-container {
-  position: absolute;
-  top: 345px;
-  left: 630px;
-  height: 150px;
-  width: 150px;
+    position: absolute;
+    top: 345px;
+    left: 630px;
+    height: 150px;
+    width: 150px;
 }
 
 #hind-img {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .brush {
@@ -230,105 +226,105 @@ p {
 
 
 .end-zone {
-  position: absolute;
-  top: 70px;
-  left: 20px;
-  width: 65px;
-  height: 45px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: 65px;
+    height: 45px;
 }
 
 #first-section {
-  position: absolute;
-  top: 121px;
-  left: 180px;
-  width: 170px;
-  height: 44px;
+    position: absolute;
+    top: 121px;
+    left: 180px;
+    width: 170px;
+    height: 44px;
 }
 
 #second-section {
-  position: absolute;
-  top: 160px;
-  left: 320px;
-  width: 30px;
-  height: 150px;
+    position: absolute;
+    top: 160px;
+    left: 320px;
+    width: 30px;
+    height: 150px;
 }
 
 #third-section {
-  position: absolute;
-  top: 280px;
-  left: 170px;
-  width: 150px;
-  height: 30px;
+    position: absolute;
+    top: 280px;
+    left: 170px;
+    width: 150px;
+    height: 30px;
 }
 
 #fourth-section {
-  position: absolute;
-  top: 310px;
-  left: 170px;
-  width: 30px;
-  height: 80px;
+    position: absolute;
+    top: 310px;
+    left: 170px;
+    width: 30px;
+    height: 80px;
 }
 
 #fifth-section {
-  position: absolute;
-  top: 390px;
-  left: 170px;
-  width: 240px;
-  height: 30px;
+    position: absolute;
+    top: 390px;
+    left: 170px;
+    width: 240px;
+    height: 30px;
 }
 
 #sixth-section {
-  position: absolute;
-  top: 420px;
-  left: 380px;
-  width: 30px;
-  height: 100px;
+    position: absolute;
+    top: 420px;
+    left: 380px;
+    width: 30px;
+    height: 100px;
 }
 
 #seventh-section {
-  position: absolute;
-  top: 490px;
-  left: 410px;
-  width: 100px;
-  height: 30px;
+    position: absolute;
+    top: 490px;
+    left: 410px;
+    width: 100px;
+    height: 30px;
 }
 
 #eighth-section {
-  position: absolute;
-  top: 330px;
-  left: 510px;
-  width: 30px;
-  height: 190px;
+    position: absolute;
+    top: 330px;
+    left: 510px;
+    width: 30px;
+    height: 190px;
 }
 
 #ninth-section {
-  position: absolute;
-  top: 330px;
-  left: 410px;
-  width: 100px;
-  height: 30px;
+    position: absolute;
+    top: 330px;
+    left: 410px;
+    width: 100px;
+    height: 30px;
 }
 
 #tenth-section {
-  position: absolute;
-  top: 100px;
-  left: 410px;
-  width: 30px;
-  height: 230px;
+    position: absolute;
+    top: 100px;
+    left: 410px;
+    width: 30px;
+    height: 230px;
 }
 
 #eleventh-section {
-  position: absolute;
-  top: 100px;
-  left: 440px;
-  width: 180px;
-  height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 440px;
+    width: 180px;
+    height: 30px;
 }
 
 #twelfth-section {
-  position: absolute;
-  top: 100px;
-  left: 620px;
-  width: 30px;
-  height: 360px;
+    position: absolute;
+    top: 100px;
+    left: 620px;
+    width: 30px;
+    height: 360px;
 }
