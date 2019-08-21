@@ -8,8 +8,9 @@ var showWinPopup = new CustomEvent(
 )
 
 document.querySelector('.end-zone').addEventListener('mouseover', function () {
-    document.dispatchEvent(showWinPopup)
-    $('.game').load('./partials/popups.html')
+    $('.game').load('./partials/popups.html', {}, function(responseText, textStatus, jqXHR) {
+        document.querySelector('#pop-up-msg').textContent = "You win!"
+    })
 })
 
 var showLosePopup = new CustomEvent(
@@ -21,7 +22,10 @@ var showLosePopup = new CustomEvent(
 )
 
 document.querySelector('.lose').addEventListener('mouseover', function () {
-    document.dispatchEvent(showLosePopup)
-    $('.game').load('./partials/popups.html')
+    $('.game').load('./partials/popups.html', {}, function(responseText, textStatus, jqXHR) {
+        $("#pop-up img").attr({ "src": "images/lose-bone.svg" });
+        document.querySelector('#pop-up-msg').textContent = "You lose!"
+    })
 })
+
 
