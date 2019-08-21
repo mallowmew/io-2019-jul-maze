@@ -140,3 +140,12 @@ p {
   height: 100%;
   width: 100%;
 }
+
+.pop-up-background {
+    margin: 50px auto;
+    height: 600px;
+    width: 800px;
+    background-color: #6a64d9;
+    position: relative;
+    overflow: hidden;
+}
