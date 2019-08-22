@@ -432,7 +432,7 @@ body {
     z-index: 10;
 }
 
-.pop-up-background {
+.pop-up-container {
     height: 600px;
     width: 800px;
     background-color: #ff64a7;
@@ -441,7 +441,7 @@ body {
     opacity: 0.7;
 }
 
-.pop-up-container {
+.pop-up {
     height: 100%;
     width: 100%;
 }
