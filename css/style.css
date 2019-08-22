@@ -251,6 +251,8 @@ body {
     width: 10px;
     animation: rotation 1s infinite linear;
     z-index: 3;
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
 }
 
 @keyframes rotation {
