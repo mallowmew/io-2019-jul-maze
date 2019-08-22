@@ -7,6 +7,7 @@ $('.start-zone').each(function (index, starts) {
                 hitboxes.addEventListener('mouseenter', loseGame)
             })
             $('.end-zone').on('mouseover', winGame)
+            $('#twelfth-section').on('mouseover', moveTail)
             gameStarted = true;
         }
     })
@@ -32,7 +33,7 @@ function winGame() {
     })
 }
 
-$('#twelfth-section').on('mouseover', function () {
+function moveTail() {
     $('#tail').css('animation-play-state', 'running')
     $('#tail').css('-webkit-animation-play-state', 'running')
-})
+}
