@@ -24,6 +24,7 @@ function loseGame() {
             .text("You lose!")
             .css('color', '#f9f871')
     })
+    stopBrushes()
 }
 
 function winGame() {
@@ -31,9 +32,14 @@ function winGame() {
     $('.show-popup').load('partials/popups.html', {}, function () {
         $('#pop-up-msg').text("You win!")
     })
+    stopBrushes()
 }
 
 function moveTail() {
     $('#tail').css('animation-play-state', 'running')
     $('#tail').css('-webkit-animation-play-state', 'running')
+}
+
+function stopBrushes() {
+    $('#second-brush').css({'animation': 'none', 'right': '100px'})
 }
