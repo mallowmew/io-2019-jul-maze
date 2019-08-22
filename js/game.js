@@ -15,8 +15,7 @@ $('.start-zone').each(function(index, starts) {
 $(document).on('gameStart', function() {
     $('.lose').each( function(index, hitboxes) {
         hitboxes.addEventListener('mouseenter', function() {
-            $('.show-popup').show()
-            $('.show-popup').load('partials/popups.html', {}, function() {
+            $('.show-popup').show().load('partials/popups.html', {}, function() {
                 $("#bone-img").attr({ 
                     "src": "images/lose-bone.svg", 
                     "alt": "Lose popup background"
@@ -31,8 +30,7 @@ $(document).on('gameStart', function() {
 
 $(document).on('gameStart', function() {
     $('.end-zone').on('mouseover', function () {
-        $('.show-popup').show()
-        $('.show-popup').load('partials/popups.html', {}, function () {
+        $('.show-popup').show().load('partials/popups.html', {}, function () {
             $('#pop-up-msg').text("You win!")
         })
     })
