@@ -1,7 +1,7 @@
 var gameStarted = false
 
-$('.start-zone').each(function (index, starts) {
-    starts.addEventListener('mouseover', function () {
+$('.start-zone').each(function (index, startZone) {
+    startZone.addEventListener('mouseover', function () {
         if (!gameStarted) {
             $('.lose').each(function (index, hitboxes) {
                 hitboxes.addEventListener('mouseenter', loseGame)
