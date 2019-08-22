@@ -35,30 +35,3 @@ $(document).on('gameStart', function() {
         })
     })
 })
-
-$(function() {
-    function firstBrushLoop() {
-        $('#first-brush')
-            .animate({bottom: 250}, 1000)
-            .animate({bottom: 150}, 1000, firstBrushLoop)
-    }
-    firstBrushLoop()
-})
-
-$(function() {
-    function secondBrushLoop() {
-        $('#second-brush')
-            .animate({left: 380}, 1000)
-            .animate({left: 550}, 200, secondBrushLoop)
-    }
-    secondBrushLoop()
-})
-
-$(function() {
-    function thirdBrushLoop() {
-        $('#third-brush')
-            .animate({right: 350}, 400)
-            .animate({right: 290}, 400, thirdBrushLoop)
-    }
-    thirdBrushLoop()
-})
