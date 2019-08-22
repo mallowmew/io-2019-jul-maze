@@ -30,6 +30,7 @@ function loseGame() {
 function winGame() {
     $('.show-popup').show().load('partials/popups.html', {}, function () {
         $('#pop-up-msg').text("You win!")
+        $('#reset-button').css('background', '#ff64a7').css('color', '#f9f871')
     })
     stopBrushes()
 }
