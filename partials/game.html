@@ -1,7 +1,59 @@
 <div class="game">
-    <div class="maze-background">
-        <img alt="paw print" src="./images/paw-print.svg" class="paw" id="middle-paw">
-        <img alt="paw print" src="./images/paw-print.svg" class="paw" id="right-paw">
-        <img alt="paw print" src="./images/paw-print.svg" class="paw" id="left-paw">
+    <div class="maze-background lose">
+        <img alt="paw" src="images/paw-print.svg" class="paw" id="top-left-paw">
+        <img alt="paw" src="images/paw-print.svg" class="paw" id="top-right-paw">
+        <img alt="paw" src="images/paw-print.svg" class="paw" id="bottom-left-paw">
+        <img alt="paw" src="images/paw-print.svg" class="paw" id="bottom-middle-paw">
+        <img alt="paw" src="images/paw-print.svg" class="paw" id="bottom-right-paw">
+        <img alt="paw" src="images/paw-print.svg" class="paw" id="right-paw">
+        <img alt="paw" src="images/paw-print.svg" class="paw" id="left-paw">
+        <div id="head-container"><img src="images/dog-head.svg" id="head-img"></div>
+        <div id="hind-container"><img src="images/dog-hind.svg" id="hind-img"></div>
+        <div class="brush" id="first-brush">
+            <img src="images/brush-white.svg">
+            <div class="lose head-hitbox"></div>
+            <div class="lose handle-hitbox"></div>
+        </div>
+        <div class="brush" id="second-brush">
+            <img src="images/brush-pink.svg">
+            <div class="lose head-hitbox"></div>
+            <div class="lose handle-hitbox"></div>
+        </div>
+        <div class="brush" id="third-brush">
+            <img src="images/brush-green.svg">
+            <div class="lose head-hitbox"></div>
+            <div class="lose handle-hitbox"></div>
+        </div>
+        <div id="tail">
+            <div class="lose tail-hitbox">
+                <img src="images/tail.svg">
+            </div>
+        </div>
+    </div>
+    <div class="maze-container">
+        <div id="head-container">
+            <img src="images/dog-head.svg" id="head-img">
+            <div id="start-zone-1" class="start-zone dog"></div>
+            <div id="start-zone-2" class="start-zone dog"></div>
+            <div id="start-zone-3" class="start-zone dog"></div>
+        </div>
+        <div id="first-section" class="path dog"></div>
+        <div id="second-section" class="path dog"></div>
+        <div id="third-section" class="path dog"></div>
+        <div id="fourth-section" class="path dog"></div>
+        <div id="fifth-section" class="path dog"></div>
+        <div id="sixth-section" class="path dog"></div>
+        <div id="seventh-section" class="path dog"></div>
+        <div id="eighth-section" class="path dog"></div>
+        <div id="ninth-section" class="path dog"></div>
+        <div id="tenth-section" class="path dog"></div>
+        <div id="eleventh-section" class="path dog"></div>
+        <div id="twelfth-section" class="path dog"></div>
+        <div id="hind-container">
+            <img src="images/dog-hind.svg" id="hind-img">
+            <div class="end-zone dog"></div>
+        </div>
     </div>
 </div>
+<div class="show-popup"></div>
+<script src="js/game.js"></script>
