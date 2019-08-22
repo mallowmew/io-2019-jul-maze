@@ -220,14 +220,17 @@ body {
 #first-brush {
     transform: rotate(90deg);
     animation: first-brush-animation 2s infinite;
+    left: 240px;
 }
 
 #second-brush {
     animation: second-brush-animation 1s infinite;
+    bottom: 125px;
 }
 
 #third-brush {
     animation: third-brush-animation 1s infinite;
+    top: 180px;
 }
 
 .head-hitbox {
@@ -276,41 +279,35 @@ body {
 @keyframes first-brush-animation {
     0% {
         bottom: 250px;
-        left: 240px;
     }
     50% {
         bottom: 150px;
     }
     100% {
         bottom: 250px;
-        left: 240px;
     }
 }
 
 @keyframes second-brush-animation {
     0% {
-        bottom: 125px;
         left: 550px;
     }
     80% {
         left: 370px;
     }
     100% {
-        bottom: 125px;
         left: 550px;
     }
 }
 
 @keyframes third-brush-animation {
     0% {
-        top: 180px;
         right: 300px;
     }
     50% {
         right: 360px;
     }
     100% {
-        top: 180px;
         right: 300px;
     }
 }
