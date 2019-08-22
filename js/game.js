@@ -7,10 +7,7 @@ $('.start-zone').each(function (index, starts) {
                 hitboxes.addEventListener('mouseenter', loseGame)
             })
             $('.end-zone').on('mouseover', winGame)
-            $('#twelfth-section').on('mouseover', function () {
-                $('#tail').css('animation-play-state', 'running')
-                $('#tail').css('-webkit-animation-play-state', 'running')
-            })
+            $('#twelfth-section').on('mouseover', moveTail)
             gameStarted = true;
         }
     })
@@ -34,4 +31,9 @@ function winGame() {
     $('.show-popup').load('partials/popups.html', {}, function () {
         $('#pop-up-msg').text("You win!")
     })
+}
+
+function moveTail() {
+    $('#tail').css('animation-play-state', 'running')
+    $('#tail').css('-webkit-animation-play-state', 'running')
 }
