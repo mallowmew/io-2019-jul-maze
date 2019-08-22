@@ -166,6 +166,7 @@ body {
 #head-img {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 #start-zone-1 {
@@ -200,7 +201,7 @@ body {
     width: 150px;
 }
 
-#hind-img {
+.hind-img {
     height: 100%;
     width: 100%;
 }
