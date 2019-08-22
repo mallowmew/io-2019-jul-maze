@@ -27,8 +27,7 @@ function loseGame() {
 }
 
 function winGame() {
-    $('.show-popup').show()
-    $('.show-popup').load('partials/popups.html', {}, function () {
+    $('.show-popup').show().load('partials/popups.html', {}, function () {
         $('#pop-up-msg').text("You win!")
     })
 }
