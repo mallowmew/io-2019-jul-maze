@@ -458,7 +458,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     margin: 0;
     color: #ff64a7;
     font-size: 4rem;
