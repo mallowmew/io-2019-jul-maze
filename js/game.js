@@ -17,7 +17,7 @@ function loseGame() {
         $("#bone-img").attr({ 
             "src": "images/lose-bone.svg", 
             "alt": "Lose popup background"
-        });
+        })
         $('.pop-up-background').css('background-color','#f9f871')
         $('#pop-up-msg')
             .text("You lose!")
