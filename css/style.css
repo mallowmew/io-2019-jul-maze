@@ -37,6 +37,10 @@ body {
     width: 55%;
 }
 
+.dog {
+    cursor: grab;
+}
+
 .dog-img-container {
     position: absolute;
     right: -70px;
@@ -80,7 +84,6 @@ body {
     width: 100%;
     position: relative;
     background-color: #ffc35d;
-    cursor: grab;
 }
 
 .maze-background {
