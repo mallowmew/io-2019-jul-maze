@@ -19,7 +19,9 @@ function loseGame() {
             "alt": "Lose popup background"
         });
         $('.pop-up-background').css('background-color','#f9f871')
-        $('#pop-up-msg').text("You lose!").css('color', '#f9f871')
+        $('#pop-up-msg')
+            .text("You lose!")
+            .css('color', '#f9f871')
     })
 }
 
