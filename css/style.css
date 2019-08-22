@@ -218,19 +218,19 @@ body {
 }
 
 #first-brush {
-    bottom: 200px;
-    left: 240px;
     transform: rotate(90deg);
+    animation: first-brush-animation 2s infinite;
+    left: 240px;
 }
 
 #second-brush {
+    animation: second-brush-animation 1s infinite;
     bottom: 125px;
-    left: 435px;
 }
 
 #third-brush {
-    top: 183px;
-    right: 290px;
+    animation: third-brush-animation 1s infinite;
+    top: 180px;
 }
 
 .head-hitbox {
@@ -273,6 +273,42 @@ body {
     }
     to {
         transform: rotate(359deg);
+    }
+}
+
+@keyframes first-brush-animation {
+    0% {
+        bottom: 250px;
+    }
+    50% {
+        bottom: 150px;
+    }
+    100% {
+        bottom: 250px;
+    }
+}
+
+@keyframes second-brush-animation {
+    0% {
+        left: 550px;
+    }
+    80% {
+        left: 370px;
+    }
+    100% {
+        left: 550px;
+    }
+}
+
+@keyframes third-brush-animation {
+    0% {
+        right: 300px;
+    }
+    50% {
+        right: 360px;
+    }
+    100% {
+        right: 300px;
     }
 }
 
