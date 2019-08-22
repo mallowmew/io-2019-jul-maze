@@ -233,13 +233,25 @@ body {
     right: 290px;
 }
 
-.hitbox {
-    height: 60px;
-    width: 40px;
+.head-hitbox {
+    height: 70px;
+    width: 42px;
     position: absolute;
-    top: 40px;
-    border-radius: 40%;
+    top: 30px;
+    left: 3px;
+    border-radius: 50%;
     transform: rotate(20deg);
+    z-index: 2;
+}
+
+.handle-hitbox {
+    height: 45px;
+    width: 21px;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    border-radius: 50%;
+    transform: rotate(16deg);
     z-index: 2;
 }
 
