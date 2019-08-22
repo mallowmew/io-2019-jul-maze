@@ -36,6 +36,11 @@ $(document).on('gameStart', function() {
     })
 })
 
+$('#twelfth-section').on('mouseover', function() {
+    $('#tail').css('animation-play-state', 'running')
+    $('#tail').css('-webkit-animation-play-state', 'running')
+})
+
 $(function() {
     function firstBrushLoop() {
         $('#first-brush')
