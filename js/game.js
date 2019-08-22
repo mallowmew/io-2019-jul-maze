@@ -40,5 +40,5 @@ function moveTail() {
 }
 
 function stopBrushes() {
-    $('#second-brush').css({'animation': 'none', 'right': '100px'})
+    $('#second-brush').hide()
 }
