@@ -52,5 +52,4 @@ function stopBrushes() {
 
 function resetGame() {
     $('.container').load('partials/splash.html')
-    gameStarted = false
 }
