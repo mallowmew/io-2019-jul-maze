@@ -458,8 +458,24 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     margin: 0;
     color: #ff64a7;
     font-size: 4rem;
+}
+
+#reset-button {
+    padding: 5px;
+    transform: translate(-50%, 40%);
+    font-size: 4rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    border: #ffc35d solid 6px;
+    background-color: #f9f871;
+    cursor: pointer;
+    color: #ff64a7;
+    font-weight: bold;
+    text-align: center;
 }
